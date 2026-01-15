@@ -1,8 +1,8 @@
-# learning-git
+# Writing On GitHub - Practice
 
-Hello, World!
+This is a demo project for me to practice the "Writing on GitHub" instructions (https://docs.github.com/en/get-started/writing-on-github).
 
-This is a demo project for me to practice and learn how to use Git.
+<!-- This is a comment. It is not visible on the published page. -->
 
 ## Adding an image
 
@@ -74,3 +74,9 @@ Here is a quote from a book that I love:
 > It begins with absence and desire. It begins with blood and fear. It begins with a discovery of witches.
 
 &mdash; Deborah Harkness, _A Discovery of Witches_
+
+## Adding a comment
+
+Comments are hidden. You have to view the code to see the comment. Use comment tag:
+
+`<!-- COMMENT -->`
