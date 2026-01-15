@@ -16,7 +16,7 @@ This one is from an image added to my image repo. The repo needs to be public in
 
 Ranking Emily Henry books and showing table formatting. 
 
-| Rank | default -- | L aligned :-- | R aligned --: | center aligned :--: |
+| Rank | default -- | L aligned :-- | R aligned --: | Center aligned :--: |
 |:--:|--|:--|--:|:--:|
 | 1 | Funny Story | Funny Story | Funny Story | Funny Story |
 | 2 | Beach Read | Beach Read | Beach Read | Beach Read |
@@ -27,3 +27,42 @@ Ranking Emily Henry books and showing table formatting.
 | 7 | Happy Place | Happy Place | Happy Place | Happy Place |
 
 See how -- (the default) makes the cells left aligned, --: makes the cells right aligned, :-- makes the cells left aligned, and :--: makes the cell center aligned
+
+## Adding a collapsed section
+
+Use the "details" tag to collapse sections.
+
+You can use the default, where the section is collapsed ("details" tag).
+
+<details>
+<summary>EmHen Books ranked</summary>
+
+| Rank | Title | 
+|--|--|
+| 1 | Funny Story | 
+| 2 | Beach Read | 
+| 3 | People We Meet on Vacation | 
+| 4 | Book Lovers | 
+| 5 | Great Big Beautiful Life | 
+| 6 | Any future books | 
+| 7 | Happy Place | 
+
+</details>
+
+Or you can make it so that the section defaults as visible, but can be collapsed ("details open" tag).
+
+<details open>
+<summary>EmHen Books ranked</summary>
+
+| Rank | Title | 
+|--|--|
+| 1 | Funny Story | 
+| 2 | Beach Read | 
+| 3 | People We Meet on Vacation | 
+| 4 | Book Lovers | 
+| 5 | Great Big Beautiful Life | 
+| 6 | Any future books | 
+| 7 | Happy Place | 
+
+</details>
+
