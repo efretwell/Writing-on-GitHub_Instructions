@@ -2,7 +2,7 @@
 
 Hello, World!
 
-This is a demo project for learning how to use Git.
+This is a demo project for me to practice and learn how to use Git.
 
 ## Adding an image
 
@@ -66,3 +66,11 @@ Or you can make it so that the section defaults as visible, but can be collapsed
 
 </details>
 
+## Adding a quote
+
+Here is a quote from a book that I love:
+
+---
+> It begins with absence and desire. It begins with blood and fear. It begins with a discovery of witches.
+
+&mdash; Deborah Harkness, _A Discovery of Witches_
