@@ -80,3 +80,14 @@ Here is a quote from a book that I love:
 Comments are hidden. You have to view the code to see the comment. Use comment tag:
 
 `<!-- COMMENT -->`
+
+# Headings
+
+This is what the headings look like:
+
+# Level 1
+## Level 2
+### Level 3
+#### Level 4
+##### Level 5
+###### Level 6
