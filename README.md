@@ -91,3 +91,43 @@ This is what the headings look like:
 #### Level 4
 ##### Level 5
 ###### Level 6
+
+# Text styling
+
+| Style | Code | Example Code | Output | 
+|---|---|---|---|
+| Bold | Surround text with ** or __ | `**Bold text**` | **Bold text** |
+| Italic | Surround text with * or _ | `*Italic text*` | *Italic text* |
+| Strikethrough | Surround text with ~ or ~~ | `~Strikethrough text~` | ~Strikethrough text~ |
+| Bold and italic | Surround text with *** | `***Bold and italic text***` | ***Bold and italic text*** |
+| Bold and nested italic | Surround text with ** and nested with _ | `**Bold _and italic text_**` | **Bold _and italic text_** |
+| Subscript | Surround text with `<sub> </sub>` | `<sub>Subscript text</sub>` | <sub>Subscript text</sub> |
+| Superscript | Surround text with `<sup> </sup>` | `<sup>Superscript text</sup>` | <sup>Superscript text</sup> |
+| Underline | Surround text with `<ins> </ins>` | `<ins>Underlined text</ins>` | <ins>Underlined text</ins> |
+
+## Code Text
+
+To display code text without code output, surround code text with ` 
+
+Example for a single line or word of code:
+
+<img width="221" height="40" alt="image" src="https://github.com/user-attachments/assets/6138333b-2b6b-48d9-910b-6eea6a303a36" />
+
+Output:
+
+`Surround code text with marks`
+
+Example for a long string of code:
+
+<img width="289" height="137" alt="image" src="https://github.com/user-attachments/assets/bde81865-5239-4186-ae52-8b2079746896" />
+
+Output: 
+
+```
+To display multiple lines of code text:
+Enter three marks and a hard return.
+Enter the code.
+Enter three closing marks.
+```
+
+
