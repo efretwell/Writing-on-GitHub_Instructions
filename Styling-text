@@ -1,9 +1,0 @@
-# Styling Text
-
-| Style | Code | Example code | Output |
-|---|---|---|---| 
-| Bold | Surround the text with ** or __ | `**bold text**` or `__bold text__` | **bold text** |
-
-| text | t4est | 
-|--|--|
-| test | test |
