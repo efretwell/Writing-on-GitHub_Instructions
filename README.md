@@ -85,12 +85,8 @@ Comments are hidden. You have to view the code to see the comment. Use comment t
 
 This is what the headings look like:
 
-# Level 1
-## Level 2
-### Level 3
-#### Level 4
-##### Level 5
-###### Level 6
+<img width="484" height="308" alt="image" src="https://github.com/user-attachments/assets/6067fa5f-e2af-4d60-9ca9-a04f9a899b4b" />
+
 
 # Text styling
 
