@@ -116,38 +116,27 @@ Various forms of lists can be used in GitHub.
 
 Use a dash, asterisk, or plus sign to format an unordered list.
 
+
 ```
 - Funny Story
 - Beach Read
-
-or
-
 * People We Meet on Vacation
 * Book Lovers
-
-or
-
 + Great Big Beautiful Life
 + Happy Place
 ```
 
 - Funny Story
 - Beach Read
-
-or
-
 * People We Meet on Vacation
 * Book Lovers
-
-or
-
 + Great Big Beautiful Life
 + Happy Place
 
 ## Ordered lists
 
 To order a list, precede each line with a number.
-
+ 
 ```
 1. Funny Story
 2. Beach Read
