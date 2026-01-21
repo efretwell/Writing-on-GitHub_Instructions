@@ -83,10 +83,13 @@ Comments are hidden. You have to view the code to see the comment. Use comment t
 
 # Headings
 
+Use the pound sign to add heading formating. One pound sign for a Level 1 heading, all the way up to six pound signs for a Level 6 heading.
+
 This is what the headings look like:
 
 <img width="484" height="308" alt="image" src="https://github.com/user-attachments/assets/6067fa5f-e2af-4d60-9ca9-a04f9a899b4b" />
 
+When headings are present, GitHub automatically generates a TOC which is accessible form the file header.
 
 # Text styling
 
@@ -103,7 +106,7 @@ This is what the headings look like:
 
 ## Code Text
 
-To display code text without code output, surround code text with ` 
+To display code text without code output, surround code text with a backtick ( ` ). 
 
 Example for a single line or word of code:
 
@@ -126,4 +129,40 @@ Enter the code.
 Enter three closing marks.
 ```
 
+# Adding color
+
+In issues, pull requests, and discussions, call out colors by using backticks. A supported color model within backticks will display a visualization of the color.
+
+| Color | Syntax | Example | 
+|---|---|---|
+| HEX | `#RRGGBB` | `#0969DA` |
+| RGB | `rgb(R,G,B)` | `rgb(9,105,218)` |
+| HSL | `hsl(H,S,L)` | `hsl(212,92%,45%)` |
+
+The HEX background colors are `#ffffff` for light mode and `#000000` for dark mode.
+
+# Links
+
+Wrap the text in brackets `[ ]` and the URL in parenthesis `( )`.
+
+Keyboard shortcut is `command`+`K`.
+
+## External links
+
+To create a markdown hyperlink, highlight the text and use the keyboard shortcut `command`+`v`. To replace the text with the link, use the shortcut `command`+`shift`+`V`.
+
+## Section links
+
+Add the brackets and parenthesis, then copy the section link and paste it into the parenthesis.
+
+Notes for section links:
+- Letters are lowercase.
+- Replace spaces with hyphens.
+- Remove any markdown code, leaving only the contents.
+
+## Relative links
+
+A relative link is a link that is relative to the current file. They help readers navigate to other files in your repository and are easier for users who clone your repository.
+
+For example, a README file in root contains a link to the CONTRIBUTING.md file, also in root. In this case, the link is `[visible text](docs/CONTRIBUTING.md)`.
 
