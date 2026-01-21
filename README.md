@@ -225,15 +225,11 @@ Example for a single line or word of code:
 
 <img width="221" height="40" alt="image" src="https://github.com/user-attachments/assets/6138333b-2b6b-48d9-910b-6eea6a303a36" />
 
-Output:
-
 `Surround code text with marks`
 
 Example for a long string of code:
 
 <img width="289" height="137" alt="image" src="https://github.com/user-attachments/assets/bde81865-5239-4186-ae52-8b2079746896" />
-
-Output: 
 
 ```
 To display multiple lines of code text:
