@@ -164,7 +164,7 @@ To order a list, precede each line with a number.
 5. Great Big Beautiful Life
 6. Happy Place
 
-# Nested lists
+## Nested lists
 
 To create a nested list using the web editor on GitHub or a text editor that uses a monospaced font, like Visual Studio Code, you can align your list visually. Type space characters in front of your nested list item until the list marker character (- or *) lies directly below the first character of the text in the item above it. For example: 
 
