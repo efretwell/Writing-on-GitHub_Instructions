@@ -4,83 +4,6 @@ This is a demo project for me to practice the ["Writing on GitHub" instructions]
 
 <!-- This is a comment. It is not visible on the published page. -->
 
-## Adding an image
-
-<picture>
- <img alt="IMAGE OF OPEN BOOKS" src="https://github.com/efretwell/images/blob/main/open-books-background-reading-concept-bookstore-library-education-information-hardcover.jpg" width="50%">
-</picture>
-
-This one is from an image added to my image repo. The repo needs to be public in order for others to see the image. 
-
-## Adding a table
-
-Ranking Emily Henry books and showing table formatting. 
-
-| Rank | default -- | L aligned :-- | R aligned --: | Center aligned :--: |
-|:--:|--|:--|--:|:--:|
-| 1 | Funny Story | Funny Story | Funny Story | Funny Story |
-| 2 | Beach Read | Beach Read | Beach Read | Beach Read |
-| 3 | People We Meet on Vacation | People We Meet on Vacation | People We Meet on Vacation | People We Meet on Vacation |
-| 4 | Book Lovers | Book Lovers | Book Lovers | Book Lovers |
-| 5 | Great Big Beautiful Life | Great Big Beautiful Life | Great Big Beautiful Life | Great Big Beautiful Life |
-| 6 | Any future books | Any future books | Any future books | Any future books |
-| 7 | Happy Place | Happy Place | Happy Place | Happy Place |
-
-See how -- (the default) makes the cells left aligned, --: makes the cells right aligned, :-- makes the cells left aligned, and :--: makes the cell center aligned
-
-## Adding a collapsed section
-
-Use the "details" tag to collapse sections.
-
-You can use the default, where the section is collapsed ("details" tag).
-
-<details>
-<summary>EmHen Books ranked</summary>
-
-| Rank | Title | 
-|--|--|
-| 1 | Funny Story | 
-| 2 | Beach Read | 
-| 3 | People We Meet on Vacation | 
-| 4 | Book Lovers | 
-| 5 | Great Big Beautiful Life | 
-| 6 | Any future books | 
-| 7 | Happy Place | 
-
-</details>
-
-Or you can make it so that the section defaults as visible, but can be collapsed ("details open" tag).
-
-<details open>
-<summary>EmHen Books ranked</summary>
-
-| Rank | Title | 
-|--|--|
-| 1 | Funny Story | 
-| 2 | Beach Read | 
-| 3 | People We Meet on Vacation | 
-| 4 | Book Lovers | 
-| 5 | Great Big Beautiful Life | 
-| 6 | Any future books | 
-| 7 | Happy Place | 
-
-</details>
-
-## Adding a quote
-
-Here is a quote from a book that I love:
-
----
-> It begins with absence and desire. It begins with blood and fear. It begins with a discovery of witches.
-
-&mdash; Deborah Harkness, _A Discovery of Witches_
-
-## Adding a comment
-
-Comments are hidden. You have to view the code to see the comment. Use comment tag:
-
-`<!-- COMMENT -->`
-
 # Headings
 
 Use the pound sign to add heading formating. One pound sign for a Level 1 heading, all the way up to six pound signs for a Level 6 heading.
@@ -206,7 +129,78 @@ If a task item description begins with a parenthesis, add a backslash prior to t
 - [ ] (Optional) Task item.
 - [x] (Optional) Task item.
 
-## Code Text
+
+# Tables
+
+Ranking Emily Henry books and showing table formatting. 
+
+| Rank | default -- | L aligned :-- | R aligned --: | Center aligned :--: |
+|:--:|--|:--|--:|:--:|
+| 1 | Funny Story | Funny Story | Funny Story | Funny Story |
+| 2 | Beach Read | Beach Read | Beach Read | Beach Read |
+| 3 | People We Meet on Vacation | People We Meet on Vacation | People We Meet on Vacation | People We Meet on Vacation |
+| 4 | Book Lovers | Book Lovers | Book Lovers | Book Lovers |
+| 5 | Great Big Beautiful Life | Great Big Beautiful Life | Great Big Beautiful Life | Great Big Beautiful Life |
+| 6 | Any future books | Any future books | Any future books | Any future books |
+| 7 | Happy Place | Happy Place | Happy Place | Happy Place |
+
+See how -- (the default) makes the cells left aligned, --: makes the cells right aligned, :-- makes the cells left aligned, and :--: makes the cell center aligned
+
+# Collapsed sections
+
+Use the "details" tag to collapse sections.
+
+You can use the default, where the section is collapsed ("details" tag).
+
+<details>
+<summary>EmHen Books ranked</summary>
+
+| Rank | Title | 
+|--|--|
+| 1 | Funny Story | 
+| 2 | Beach Read | 
+| 3 | People We Meet on Vacation | 
+| 4 | Book Lovers | 
+| 5 | Great Big Beautiful Life | 
+| 6 | Any future books | 
+| 7 | Happy Place | 
+
+</details>
+
+Or you can make it so that the section defaults as visible, but can be collapsed ("details open" tag).
+
+<details open>
+<summary>EmHen Books ranked</summary>
+
+| Rank | Title | 
+|--|--|
+| 1 | Funny Story | 
+| 2 | Beach Read | 
+| 3 | People We Meet on Vacation | 
+| 4 | Book Lovers | 
+| 5 | Great Big Beautiful Life | 
+| 6 | Any future books | 
+| 7 | Happy Place | 
+
+</details>
+
+# Quotes
+
+Here is a quote from a book that I love:
+
+---
+> It begins with absence and desire. It begins with blood and fear. It begins with a discovery of witches.
+
+&mdash; Deborah Harkness, _A Discovery of Witches_
+
+## Adding a comment
+
+Comments are hidden. You have to view the code to see the comment. Use comment tag:
+
+`<!-- COMMENT -->`
+
+
+# Code Text
 
 To display code text without code output, surround code text with a backtick ( ` ). 
 
@@ -227,7 +221,7 @@ Enter the code.
 Enter three closing marks.
 ```
 
-# Adding color
+# Color
 
 In issues, pull requests, and discussions, call out colors by using backticks. A supported color model within backticks will display a visualization of the color.
 
@@ -367,6 +361,12 @@ To add an image from your repository, use relative links.
 | In issues, pull requests, and comments of another repository | `../../../github/docs/blob/main/assets/images/image.png?raw=true` |
 
 The `<picture>` element is also supported in GitHub.
+
+<picture>
+ <img alt="IMAGE OF OPEN BOOKS" src="https://github.com/efretwell/images/blob/main/open-books-background-reading-concept-bookstore-library-education-information-hardcover.jpg" width="50%">
+</picture>
+
+This one is from an image added to my image repo. The repo needs to be public in order for others to see the image. 
 
 # Emojis
 
