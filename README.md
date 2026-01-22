@@ -59,11 +59,11 @@ Use pipes `|` and hyphens `-` to create tables in Markdown.
 |:---:|---|:---|---:|:---:|---|---|
 | 1 | Row one | Row one | Row one | Row one | `Row one` | **Row one** |
 | 2 | Row two | Row two | Row two | Row two | `Row two` | *Row two* |
-| 3 | Row three | Row three | Row three | Row three | `Row three` | <sub>Row</sub> three |
-| 4 | Row four | Row four | Row four | Row four | `Row four` | <ins>Row four</ins> |
-| 5 | Row five | Row five | Row five | Row five | `Row five` | <sup>Row</sup> five |
-| 6 | Row six | Row six | Row six | Row six | `Row six` | **Row *future books*** |
-| 7 | Row seven | Row seven | Row seven | Row seven | `Row seven` | ~~Row seven~~ |
+| 3 | Row three | Row three | Row three | Row three | `Row three` | ~~Row three~~ |
+| 4 | Row four | Row four | Row four | Row four | `Row four` | **Row _four_** |
+| 5 | Row five | Row five | Row five | Row five | `Row five` | <sub>Row</sub> five |
+| 6 | Row six | Row six | Row six | Row six | `Row six` | <sup>Row</sup> six |
+| 7 | Row seven | Row seven | Row seven | Row seven | `Row seven` | <ins>Row seven</ins> |
 
 See how -- (the default) makes the cells left aligned, --: makes the cells right aligned, :-- makes the cells left aligned, and :--: makes the cell center aligned
 
