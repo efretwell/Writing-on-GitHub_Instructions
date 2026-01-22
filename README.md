@@ -20,12 +20,52 @@ When headings are present, GitHub automatically generates a TOC which is accessi
 |---|---|---|---|
 | Bold | Surround text with ** or __ | `**Bold text**` | **Bold text** |
 | Italic | Surround text with * or _ | `*Italic text*` | *Italic text* |
-| Strikethrough | Surround text with ~ or ~~ | `~Strikethrough text~` | ~Strikethrough text~ |
+| Strikethrough | Surround text with ~ or ~~ | `~~Strikethrough text~~` | ~~Strikethrough text~~ |
 | Bold and italic | Surround text with *** | `***Bold and italic text***` | ***Bold and italic text*** |
 | Bold and nested italic | Surround text with ** and nested with _ | `**Bold _and italic text_**` | **Bold _and italic text_** |
 | Subscript | Surround text with `<sub> </sub>` | `<sub>Subscript text</sub>` | <sub>Subscript text</sub> |
 | Superscript | Surround text with `<sup> </sup>` | `<sup>Superscript text</sup>` | <sup>Superscript text</sup> |
 | Underline | Surround text with `<ins> </ins>` | `<ins>Underlined text</ins>` | <ins>Underlined text</ins> |
+
+
+# Tables
+
+## Creating tables
+
+Use pipes `|` and hyphens `-` to create tables in Markdown.
+
+```
+| First Header | Second Header |
+|---|---|
+| Content | Content |
+| Additional content | Additional content |
+| Code blocks | `Code blocks` |
+| Text styling | **Text** *styling* |
+```
+
+- You must include a blank line before the table.
+- Pipes separate each column.
+- The first row is the header row. The header text is bold and center aligned.
+- Hyphens on the second row create the break between the header row and the content rows.
+- There must be at least three hyphens in each column below the header row.
+- You must have equal columns for each row in order for the table to corre
+- The cells can vary in width and not not need to be perfectly alighned within the columns.
+- You can use code blocks and text styling within tables.
+- To include a pipe as content within your table, use a backslash before the pipe.
+
+## Formatting tables
+
+| Rank | default --- | L aligned :--- | Center aligned :---: | R aligned ---: | Code block | Text styling |
+|:---:|---|:---|---:|:---:|---|---|
+| 1 | Row one | Row one | Row one | Row one | `Row one` | **Row one** |
+| 2 | Row two | Row two | Row two | Row two | `Row two` | *Row two* |
+| 3 | Row three | Row three | Row three | Row three | `Row three` | <sub>Row</sub> three |
+| 4 | Row four | Row four | Row four | Row four | `Row four` | <ins>Row four</ins> |
+| 5 | Row five | Row five | Row five | Row five | `Row five` | <sup>Row</sup> five |
+| 6 | Row six | Row six | Row six | Row six | `Row six` | **Row *future books*** |
+| 7 | Row seven | Row seven | Row seven | Row seven | `Row seven` | ~~Row seven~~ |
+
+See how -- (the default) makes the cells left aligned, --: makes the cells right aligned, :-- makes the cells left aligned, and :--: makes the cell center aligned
 
 # Lists
 
@@ -35,46 +75,42 @@ Various forms of lists can be used in GitHub.
 - [Nested lists](#nested-lists)
 - [Task lists](#task-lists)
 
+When you start a list, GitHub automatically continues the list formatting for you when you press **Enter**. To remove the formatting and return to regular paragraph text, press **Delete**.
+
 ## Unordered lists
 
 Use a dash, asterisk, or plus sign to format an unordered list.
 
 
 ```
-- Funny Story
-- Beach Read
-* People We Meet on Vacation
-* Book Lovers
-+ Great Big Beautiful Life
-+ Happy Place
+- List item one uses a hyphen
+- List item two uses a hyphen
+* List item three uses a asterisk
+* List item four uses a asterisk
++ List item five uses a plus sign
++ List item six uses a plus sign
 ```
 
-- Funny Story
-- Beach Read
-* People We Meet on Vacation
-* Book Lovers
-+ Great Big Beautiful Life
-+ Happy Place
+- List item one uses a hyphen
+- List item two uses a hyphen
+* List item three uses a asterisk
+* List item four uses a asterisk
++ List item five uses a plus sign
++ List item six uses a plus sign
 
 ## Ordered lists
 
-To order a list, precede each line with a number.
+To order a list, precede each line with a number instead of a hyphen, asterisk, or plus sign. 
  
 ```
-1. Funny Story
-2. Beach Read
-3. People We Meet on Vacation
-4. Book Lovers
-5. Great Big Beautiful Life
-6. Happy Place
+1. List item number one.
+2. List item number two.
+3. List item number three.
 ```
 
-1. Funny Story
-2. Beach Read
-3. People We Meet on Vacation
-4. Book Lovers
-5. Great Big Beautiful Life
-6. Happy Place
+1. List item number one.
+2. List item number two.
+3. List item number three.
 
 ## Nested lists
 
@@ -130,21 +166,7 @@ If a task item description begins with a parenthesis, add a backslash prior to t
 - [x] (Optional) Task item.
 
 
-# Tables
 
-Ranking Emily Henry books and showing table formatting. 
-
-| Rank | default -- | L aligned :-- | R aligned --: | Center aligned :--: |
-|:--:|--|:--|--:|:--:|
-| 1 | Funny Story | Funny Story | Funny Story | Funny Story |
-| 2 | Beach Read | Beach Read | Beach Read | Beach Read |
-| 3 | People We Meet on Vacation | People We Meet on Vacation | People We Meet on Vacation | People We Meet on Vacation |
-| 4 | Book Lovers | Book Lovers | Book Lovers | Book Lovers |
-| 5 | Great Big Beautiful Life | Great Big Beautiful Life | Great Big Beautiful Life | Great Big Beautiful Life |
-| 6 | Any future books | Any future books | Any future books | Any future books |
-| 7 | Happy Place | Happy Place | Happy Place | Happy Place |
-
-See how -- (the default) makes the cells left aligned, --: makes the cells right aligned, :-- makes the cells left aligned, and :--: makes the cell center aligned
 
 # Collapsed sections
 
