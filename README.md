@@ -35,13 +35,20 @@ When headings are present, GitHub automatically generates a TOC which is accessi
 Use pipes `|` and hyphens `-` to create tables in Markdown.
 
 ```
-| First Header | Second Header |
-|---|---|
-| Content | Content |
-| Additional content | Additional content |
-| Code blocks | `Code blocks` |
-| Text styling | **Text** *styling* |
+| Header one | Header two | Header three |
+|---|---|---|
+| Content | Content | Content |
+| Content | Content | Content |
+| Content | Content | Content |
+| Content | Content | Content |
 ```
+
+| Header one | Header two | Header three |
+|---|---|---|
+| Content | Content | Content |
+| Content | Content | Content |
+| Content | Content | Content |
+| Content | Content | Content |
 
 - You must include a blank line before the table.
 - Pipes separate each column.
@@ -55,17 +62,26 @@ Use pipes `|` and hyphens `-` to create tables in Markdown.
 
 ## Formatting tables
 
-| Rank | default --- | L aligned :--- | Center aligned :---: | R aligned ---: | Code block | Text styling |
-|:---:|---|:---|---:|:---:|---|---|
-| 1 | Row one | Row one | Row one | Row one | `Row one` | **Row one** |
-| 2 | Row two | Row two | Row two | Row two | `Row two` | *Row two* |
-| 3 | Row three | Row three | Row three | Row three | `Row three` | ~~Row three~~ |
-| 4 | Row four | Row four | Row four | Row four | `Row four` | **Row _four_** |
-| 5 | Row five | Row five | Row five | Row five | `Row five` | <sub>Row</sub> five |
-| 6 | Row six | Row six | Row six | Row six | `Row six` | <sup>Row</sup> six |
-| 7 | Row seven | Row seven | Row seven | Row seven | `Row seven` | <ins>Row seven</ins> |
+You can format the content in the table to be left, center, or right aligned by adding colons to the hyphens in the header row. See the following table for details.
 
-See how -- (the default) makes the cells left aligned, --: makes the cells right aligned, :-- makes the cells left aligned, and :--: makes the cell center aligned
+```
+| Default aligned | Left aligned | Center aligned | Right aligned | 
+|---|:---|:---:|---:|
+| Header row is `---` | Header row is `:---` | Header row is `:---:` | Header row is `---:` | 
+| Default text, default aligned | Default text, left aligned | Default text, center aligned | Default text, right aligned |
+| `Code text, default aligned` | `Code text, left aligned` | `Code text, center aligned` | `Code text, right aligned` |
+| **Bold** text, default aligned | **Bold** text, left aligned | **Bold** text, center aligned | **Bold** text, right aligned | 
+| _Italic_ text, default aligned | _Italic_ text, left aligned | _Italic_ text, center aligned | _Italic_ text, right aligned |
+```
+
+| Default aligned | Left aligned | Center aligned | Right aligned | 
+|---|:---|:---:|---:|
+| Header row is `---` | Header row is `:---` | Header row is `:---:` | Header row is `---:` | 
+| Default text, default aligned | Default text, left aligned | Default text, center aligned | Default text, right aligned |
+| `Code text, default aligned` | `Code text, left aligned` | `Code text, center aligned` | `Code text, right aligned` |
+| **Bold** text, default aligned | **Bold** text, left aligned | **Bold** text, center aligned | **Bold** text, right aligned | 
+| _Italic_ text, default aligned | _Italic_ text, left aligned | _Italic_ text, center aligned | _Italic_ text, right aligned |
+
 
 # Lists
 
