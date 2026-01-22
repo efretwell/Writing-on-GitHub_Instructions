@@ -1,8 +1,10 @@
-# Writing On GitHub - Practice
+# Writing On GitHub
 
-This is a demo project for me to practice the ["Writing on GitHub" instructions](https://docs.github.com/en/get-started/writing-on-github).
+Instructions, tips, and tricks, for writing on GitHub.
 
-<!-- This is a comment. It is not visible on the published page. -->
+What started as a demo project for me to practice the ["Writing on GitHub" instructions](https://docs.github.com/en/get-started/writing-on-github) and strengthen my skills turned into this - my own set of Writing on GitHub instructions - when I realized that I could do it better
+
+<!-- What started as a demo project for me to practice the "Writing on GitHub" instructions (https://docs.github.com/en/get-started/writing-on-github) turned into my own set of instructions when I realized that I could do it better. -->
 
 # Headings
 
