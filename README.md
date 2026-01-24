@@ -201,11 +201,11 @@ If a task item description begins with a parenthesis, add a backslash prior to t
 
 # Collapsed sections
 
-Collapsed sections allow you to temporarily obscure sections. These are useful when you have a large section of content that may not be important for every reader.  
+The `<details>` tag allows you to temporarily obscure sections. This is useful when you have a large section of content that may not be important for every reader.  
 
-Use the `<details>` tag for [collapsed content](#collapsed-content) and the `<details open>` tag for [collapsible content](#collapsible-content). You can add a `<summary>` tag to display a section title.
+Depending on the tag you use, the content will default to [collapsed](#collapsed-content) or [collapsible](#collapsible-content) until the reader expands or closes the section. Add a `<summary>` tag if you want to display a section title next to the collapse arrow. 
 
-<a name="my-custom-anchor-point"></a>` at the point you want to return to, and then add a markdown link (`[Link to anchor](#mycustom-anchor-point)
+To make content display as <a name="collapsed-content"></a> collapsed, use the `<details>` tag. 
 ```
 <details>
 <summary>Example of collapsed content</summary>
@@ -230,7 +230,7 @@ Use the `<details>` tag for [collapsed content](#collapsed-content) and the `<de
 
 </details>
 
-Or you can make it so that the section is visible until the user <a name="collapsible-content"></a>collapses the content.
+For <a name="collapsible-content"></a>collapsible content, use the `<details open>` tag to display the content until the reader chooses to collapse it.
 
 ```
 <details open>
