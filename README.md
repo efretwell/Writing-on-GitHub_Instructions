@@ -8,15 +8,27 @@ What started as a demo project for me to practice the ["Writing on GitHub" instr
 
 # Headings
 
-Use the pound sign to add heading formating. One pound sign for a Level 1 heading, all the way up to six pound signs for a Level 6 heading.
+To add a heading to your text, enter a pound sign and then the heading text. 
 
-This is what the headings look like:
+One pound sign for a Level 1 heading, all the way up to six pound signs for a Level 6 heading.
+
+```
+# Level 1
+## Level 2
+### Level 3
+#### Level 4
+##### Level 5
+###### Level 6
+```
 
 <img width="484" height="308" alt="image" src="https://github.com/user-attachments/assets/6067fa5f-e2af-4d60-9ca9-a04f9a899b4b" />
 
 When headings are present, GitHub automatically generates a TOC which is accessible form the file header.
 
+
 # Text styling
+
+To add styling to your text, you can highlight the text and then select the formatting from the Markdown toolbar or you can manually enter the formatting as you type.
 
 | Style | Code | Example Code | Output | 
 |---|---|---|---|
@@ -57,7 +69,8 @@ Use pipes `|` and hyphens `-` to create tables in Markdown.
 - The first row is the header row. The header text is bold and center aligned.
 - Hyphens on the second row create the break between the header row and the content rows.
 - There must be at least three hyphens in each column below the header row.
-- You must have equal columns for each row in order for the table to corre
+- You must have equal columns for each row.
+- The cells can wrap to the next line, but a hard return breaks the table formatting.
 - The cells can vary in width and not not need to be perfectly alighned within the columns.
 - You can use code blocks and text styling within tables.
 - To include a pipe as content within your table, use a backslash before the pipe.
@@ -188,39 +201,58 @@ If a task item description begins with a parenthesis, add a backslash prior to t
 
 # Collapsed sections
 
-Use the "details" tag to collapse sections.
+Collapsed sections allow you to temporarily obscure sections. These are useful when you have a large section of content that may not be important for every reader.  
 
-You can use the default, where the section is collapsed ("details" tag).
+Use the `<details>` tag for [collapsed content](#collapsed-content) and the `<details open>` tag for [collapsible content](#collapsible-content). You can add a `<summary>` tag to display a section title.
 
+<a name="my-custom-anchor-point"></a>` at the point you want to return to, and then add a markdown link (`[Link to anchor](#mycustom-anchor-point)
+```
 <details>
-<summary>EmHen Books ranked</summary>
+<summary>Example of collapsed content</summary>
 
 | Rank | Title | 
 |--|--|
-| 1 | Funny Story | 
-| 2 | Beach Read | 
-| 3 | People We Meet on Vacation | 
-| 4 | Book Lovers | 
-| 5 | Great Big Beautiful Life | 
-| 6 | Any future books | 
-| 7 | Happy Place | 
+| 1 | Gold | 
+| 2 | Silver | 
+| 3 | Bronze | 
+
+</details>
+```
+
+<details>
+<summary>Example of collapsed content</summary>
+
+| Rank | Title | 
+|--|--|
+| 1 | Gold | 
+| 2 | Silver | 
+| 3 | Bronze | 
 
 </details>
 
-Or you can make it so that the section defaults as visible, but can be collapsed ("details open" tag).
+Or you can make it so that the section is visible until the user <a name="collapsible-content"></a>collapses the content.
 
+```
 <details open>
-<summary>EmHen Books ranked</summary>
+<summary>Example of collapsible content </summary>
 
 | Rank | Title | 
 |--|--|
-| 1 | Funny Story | 
-| 2 | Beach Read | 
-| 3 | People We Meet on Vacation | 
-| 4 | Book Lovers | 
-| 5 | Great Big Beautiful Life | 
-| 6 | Any future books | 
-| 7 | Happy Place | 
+| 1 | Gold | 
+| 2 | Silver | 
+| 3 | Bronze |  
+
+</details>
+```
+
+<details open>
+<summary>Example of collapsible content </summary>
+
+| Rank | Title | 
+|--|--|
+| 1 | Gold | 
+| 2 | Silver | 
+| 3 | Bronze |  
 
 </details>
 
