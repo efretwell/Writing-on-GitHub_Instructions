@@ -272,7 +272,7 @@ Comments are hidden. You have to view the code to see the comment. Use comment t
 `<!-- COMMENT -->`
 
 
-# Code Text
+# Code Text and blocks
 
 To display code text without code output, surround code text with a backtick ( ` ). 
 
@@ -292,6 +292,305 @@ Enter three marks and a hard return.
 Enter the code.
 Enter three closing marks.
 ```
+
+To show the backticks, wrap them inside quadruple backticks.
+
+<img width="1234" height="130" alt="image" src="https://github.com/user-attachments/assets/bc9681c8-c539-4b43-a191-8e2292729399" />
+
+
+<img width="337" height="84" alt="image" src="https://github.com/user-attachments/assets/e313fed2-85f7-4d35-ae2b-0edc953ccdb1" />
+
+## Syntax highlighting
+
+You can add an optionl language identifier to enable syntax highlighting in your code block. This changes the color and style of the source code, making it easier to read. 
+
+To add the syntax highlight, enter the language (in lower case) after the opening backticks.
+
+````
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+````
+
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+
+````
+```python
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+````
+
+```python
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+
+# Diagrams
+
+You can create diagrams in Markdown using four different syntaxes: mermaid, geoJSON, topoJSON, and ASCII STL. Diagram rendering is available in GitHub Issues, GitHub Discussions, pull requests, wikis, and Markdown files.
+
+## Mermaid diagrams
+
+Mermaid is a Markdown-inspired tool that renders text into diagrams, including flow charts, sequence diagrams, pie charts.
+
+To create a mermaid diagram add `mermaid` syntax inside a fenced code block.
+
+````
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+````
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
+> [!NOTE]
+> You may observe errors if you run a third-party Mermaid plugin.
+>
+> To ensure GitHub supports your Mermaid syntax, check the Mermaid version curently in use:
+> ````
+> ```mermaid
+>    info
+> ```
+> ````
+
+
+## GeoJSON and TopoJSON maps
+
+You can use GeoJSON or TopoJSON syntax to create interactive maps. 
+
+To create a map, add `GeoJSON` or `TopoJSON` indside a fenced code block. 
+
+For more information on working with `.geojson` and `.topojson` files, see [Working with non-code files](https://docs.github.com/en/repositories/working-with-files/using-files/working-with-non-code-files#mapping-geojson-files-on-github).
+
+## GeoJSON
+
+You can use GeoJSON to create a map by specifying coordinates.
+
+````
+```geojson
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 1,
+      "properties": {
+        "ID": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+              [-90,35],
+              [-90,30],
+              [-85,30],
+              [-85,35],
+              [-90,35]
+          ]
+        ]
+      }
+    }
+  ]
+}
+```
+````
+
+```geojson
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 1,
+      "properties": {
+        "ID": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+              [-90,35],
+              [-90,30],
+              [-85,30],
+              [-85,35],
+              [-90,35]
+          ]
+        ]
+      }
+    }
+  ]
+}
+```
+
+## TopoJSON
+
+YOu can create a TopoJSON map by specifying coordinates and shapes.
+
+````
+```topojson
+{
+  "type": "Topology",
+  "transform": {
+    "scale": [0.0005000500050005, 0.00010001000100010001],
+    "translate": [100, 0]
+  },
+  "objects": {
+    "example": {
+      "type": "GeometryCollection",
+      "geometries": [
+        {
+          "type": "Point",
+          "properties": {"prop0": "value0"},
+          "coordinates": [4000, 5000]
+        },
+        {
+          "type": "LineString",
+          "properties": {"prop0": "value0", "prop1": 0},
+          "arcs": [0]
+        },
+        {
+          "type": "Polygon",
+          "properties": {"prop0": "value0",
+            "prop1": {"this": "that"}
+          },
+          "arcs": [[1]]
+        }
+      ]
+    }
+  },
+  "arcs": [[[4000, 0], [1999, 9999], [2000, -9999], [2000, 9999]],[[0, 0], [0, 9999], [2000, 0], [0, -9999], [-2000, 0]]]
+}
+```
+````
+
+```topojson
+{
+  "type": "Topology",
+  "transform": {
+    "scale": [0.0005000500050005, 0.00010001000100010001],
+    "translate": [100, 0]
+  },
+  "objects": {
+    "example": {
+      "type": "GeometryCollection",
+      "geometries": [
+        {
+          "type": "Point",
+          "properties": {"prop0": "value0"},
+          "coordinates": [4000, 5000]
+        },
+        {
+          "type": "LineString",
+          "properties": {"prop0": "value0", "prop1": 0},
+          "arcs": [0]
+        },
+        {
+          "type": "Polygon",
+          "properties": {"prop0": "value0",
+            "prop1": {"this": "that"}
+          },
+          "arcs": [[1]]
+        }
+      ]
+    }
+  },
+  "arcs": [[[4000, 0], [1999, 9999], [2000, -9999], [2000, 9999]],[[0, 0], [0, 9999], [2000, 0], [0, -9999], [-2000, 0]]]
+}
+```
+
+## STL 3D models
+
+You can use ASCII STL syntax directly in markdown to create interactive 3D models.
+
+To display a model, add ASCII `stl` syntax inside a fenced code block.
+
+````
+```stl
+solid cube_corner
+  facet normal 0.0 -1.0 0.0
+    outer loop
+      vertex 0.0 0.0 0.0
+      vertex 1.0 0.0 0.0
+      vertex 0.0 0.0 1.0
+    endloop
+  endfacet
+  facet normal 0.0 0.0 -1.0
+    outer loop
+      vertex 0.0 0.0 0.0
+      vertex 0.0 1.0 0.0
+      vertex 1.0 0.0 0.0
+    endloop
+  endfacet
+  facet normal -1.0 0.0 0.0
+    outer loop
+      vertex 0.0 0.0 0.0
+      vertex 0.0 0.0 1.0
+      vertex 0.0 1.0 0.0
+    endloop
+  endfacet
+  facet normal 0.577 0.577 0.577
+    outer loop
+      vertex 1.0 0.0 0.0
+      vertex 0.0 1.0 0.0
+      vertex 0.0 0.0 1.0
+    endloop
+  endfacet
+endsolid
+```
+````
+
+```stl
+solid cube_corner
+  facet normal 0.0 -1.0 0.0
+    outer loop
+      vertex 0.0 0.0 0.0
+      vertex 1.0 0.0 0.0
+      vertex 0.0 0.0 1.0
+    endloop
+  endfacet
+  facet normal 0.0 0.0 -1.0
+    outer loop
+      vertex 0.0 0.0 0.0
+      vertex 0.0 1.0 0.0
+      vertex 1.0 0.0 0.0
+    endloop
+  endfacet
+  facet normal -1.0 0.0 0.0
+    outer loop
+      vertex 0.0 0.0 0.0
+      vertex 0.0 0.0 1.0
+      vertex 0.0 1.0 0.0
+    endloop
+  endfacet
+  facet normal 0.577 0.577 0.577
+    outer loop
+      vertex 1.0 0.0 0.0
+      vertex 0.0 1.0 0.0
+      vertex 0.0 0.0 1.0
+    endloop
+  endfacet
+endsolid
+```
+
 
 # Color
 
